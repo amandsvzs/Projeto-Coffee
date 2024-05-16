@@ -6,7 +6,7 @@ public class CardapioOn {
 	
 	private String nomeCliente;
 	private String email;
-	private int telefone;
+	private String telefone;
 	private String nomeDelivery;
 	public int getId() {
 		return id;
@@ -26,11 +26,11 @@ public class CardapioOn {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(int telefone) {
-		this.telefone = telefone;
+	public void setTelefone(String data) {
+		this.telefone = data;
 	}
 	public String getNomeDelivery() {
 		return nomeDelivery;

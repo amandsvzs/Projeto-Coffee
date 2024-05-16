@@ -36,7 +36,7 @@
                            <children>
                               <AnchorPane layoutX="92.0" layoutY="1.0" prefHeight="365.0" prefWidth="221.0" style="-fx-background-color: #c8957e;">
                                  <children>
-                                    <TextField layoutX="36.0" layoutY="131.0" prefHeight="25.0" prefWidth="150.0">
+                                    <TextField fx:id="email" layoutX="36.0" layoutY="131.0" prefHeight="25.0" prefWidth="150.0">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -52,7 +52,7 @@
                                           <Font size="13.0" />
                                        </font>
                                     </Text>
-                                    <TextField layoutX="36.0" layoutY="67.0" prefHeight="25.0" prefWidth="149.0">
+                                    <TextField fx:id="nomeCliente" layoutX="36.0" layoutY="67.0" prefHeight="25.0" prefWidth="149.0">
                                        <font>
                                           <Font name="Blackadder ITC" size="12.0" />
                                        </font>
@@ -60,7 +60,7 @@
                                           <DropShadow />
                                        </effect>
                                     </TextField>
-                                    <TextField layoutX="32.0" layoutY="185.0" prefHeight="25.0" prefWidth="157.0">
+                                    <TextField fx:id="telefone" layoutX="32.0" layoutY="185.0" prefHeight="25.0" prefWidth="157.0">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -76,7 +76,7 @@
                                        </effect>
                                     </Button>
                                     <Text layoutX="18.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do seu Delivery" textAlignment="CENTER" wrappingWidth="201.13671875" />
-                                    <TextField layoutX="38.0" layoutY="245.0" prefHeight="25.0" prefWidth="152.0">
+                                    <TextField fx:id="nomeDelivery" layoutX="38.0" layoutY="245.0" prefHeight="25.0" prefWidth="152.0">
                                        <effect>
                                           <DropShadow />
                                        </effect>
