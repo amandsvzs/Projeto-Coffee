@@ -31,6 +31,8 @@ public class pedidos {
 	public pedidos () {
 		this.database = new File("database-files.txt");
 		this.files = new ArrayList<>();
+		//carregar os dados
+		loadFiles();
 	}
 	
 	private void loadFiles() {
@@ -52,6 +54,29 @@ public class pedidos {
 	}
 }
 	//CRUD
+	
+	//update
+	public void updateCardapioOn(CardapioOn updateCardapioOn) {
+		for(int i = 0; i < files.size(); i++) {
+			if(files.get(i).getId() == updateCardapioOn.getId()) {
+				files.set(i, updateCardapioOn);
+				saveFiles();
+				break;
+			}
+		}
+	}
+	
+	//buscar unico
+	
+	public CardapioOn getCardapioOnById(int id) {
+		for (CardapioOn cardapioon : files) {
+			if (cardapioon.getId() == id) {
+				return cardapioon;
+			}
+		}
+		return null;
+	}
+	
 	
 	//buscar todos	
 	public List <CardapioOn> buscarTodos(){
