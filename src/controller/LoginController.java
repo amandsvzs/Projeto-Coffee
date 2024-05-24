@@ -33,7 +33,7 @@ public class LoginController {
 				
 				StackPane root = loader.load();
 				
-				Scene scene = new Scene(root, 600, 400);
+				Scene scene = new Scene(root, 780, 400);
 				
 				Stage currentStage = (Stage) usuario.getScene().getWindow();
 				currentStage.setScene(scene);
